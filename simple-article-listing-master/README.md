@@ -16,7 +16,7 @@
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenge/simple-article-listing-master-challenge">
+    <a href="https://devchallenges.io/challenge/simple-article-listing">
       Challenge
     </a>
   </h3>
