@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>ARTICLE LISTING | devchallenges.io</title>
+    <base href="./resources/">
+</head>
+
+<body>
+    <div class="container">
+        <h1>We release interesting articles about technology</h1>
+        <img src="./Seperator.svg" alt="">
+        <div class="elements"></div>
+    </div>
+    <script>
+        let content = [
+            { heading: "Unlocking the Power of Cloud Computing:A Guide to Scalable Solutions", date: "November 12, 2024", path: "./photo_1.png" },
+            { heading: "The Future of AI:How Machine Learning is Revolutionizing Industries", date: "November 12, 2024", path: "./photo_2.png" },
+            { heading: "The Impact of 5G on Business:How Faster Networks are Transforming the Way We Work", date: "November 12, 2024", path: "./photo_3.png" }
+        ]
+        let elementsElement = document.querySelector('.elements');
+        content.forEach((item) => {
+            const articleElement = `
+            <article>
+                <img src=${item.path} alt="">
+                <section>
+                    <h3>${item.heading}</h3>
+                    <p>${item.date}</p>
+                </section>
+            </article>`;
+            elementsElement.innerHTML+=articleElement;
+        });
+    </script>
+</body>
+
+</html>
